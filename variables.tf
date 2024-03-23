@@ -3,6 +3,11 @@ variable "create_bucket" {
   type        = bool
   default     = true
 }
+variable "bucket_region" {
+  description = "Region where the bucket should be created"
+  type        = string
+  default     = "eu-central-1"
+}
 
 variable "attach_elb_log_delivery_policy" {
   description = "Controls if S3 bucket should have ELB log delivery policy attached"
